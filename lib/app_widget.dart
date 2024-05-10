@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/anime_Page.dart';
 import 'package:flutter_application_1/detalhes_Page.dart';
+import 'package:flutter_application_1/entrega_page.dart';
 import 'package:flutter_application_1/home_Page.dart';
-import 'package:flutter_application_1/logo_page.dart';
+import 'package:flutter_application_1/login_Page.dart';
+import 'package:flutter_application_1/splash_screen.dart';
 
-class appWidget extends StatelessWidget {
-  const appWidget({super.key});
+class AppWidget extends StatelessWidget {
+  const AppWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +15,12 @@ class appWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const HomePage(),
+        '/': (context) => const SplashScreen(),
+        '/login': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
         '/anima': (context) => const AnimaPage(),
-        '/detalhes': (context) => const detalhesPage(),
-        '/logo': (context) => const logoPage(),
+        '/entrega': (context) => const entregaPage(),
+        '/detalhes': (context) => const DetalhesPage(),
       },
     );
   }

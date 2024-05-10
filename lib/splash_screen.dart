@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/home_Page.dart';
+import 'package:flutter_application_1/login_Page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -27,8 +27,8 @@ class _SplashScreenState extends State<SplashScreen> {
       nav.pushReplacement(
         PageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) =>
-              const HomePage(),
-          settings: const RouteSettings(name: '/'),
+              const LoginPage(),
+          settings: const RouteSettings(name: '/home'),
         ),
       );
     });
@@ -44,7 +44,8 @@ class _SplashScreenState extends State<SplashScreen> {
           curve: Curves.elasticOut,
           width: width,
           height: height,
-          child: Hero(tag: 'ete', child: Image.asset('assets/logo.png')),
+          child:
+              Hero(tag: 'Art_Fit', child: Image.asset('assets/topo.png.jpg')),
         ),
       ),
     );

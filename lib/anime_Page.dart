@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class AnimaPage extends StatefulWidget {
   const AnimaPage({super.key});
@@ -18,8 +17,9 @@ class _AnimaPageState extends State<AnimaPage> {
         width: double.infinity,
         height: double.infinity,
         child: AnimatedAlign(
-          duration: Duration(seconds: 1),
-          alignment: Alignment.bottomLeft,
+          duration: const Duration(seconds: 3),
+          alignment:
+              clicked == true ? Alignment.bottomLeft : Alignment.topRight,
           child: GestureDetector(
             onTap: () {
               setState(() {
@@ -27,12 +27,9 @@ class _AnimaPageState extends State<AnimaPage> {
               });
             },
             child: AnimatedContainer(
-              curve: Curves.fastOutSlowIn,
-              duration: const Duration(seconds: 1),
+              duration: const Duration(seconds: 3),
               width: clicked == true ? 100 : 200,
               height: clicked == true ? 100 : 200,
-              alignment:
-                  clicked == true ? Alignment.topRight : Alignment.bottomLeft,
               decoration: BoxDecoration(
                 color: clicked == true ? Colors.blue : Colors.red,
                 borderRadius:

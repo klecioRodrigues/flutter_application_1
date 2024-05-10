@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class logoPage extends StatelessWidget {
-  const logoPage({super.key});
+class entregaPage extends StatelessWidget {
+  const entregaPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class logoPage extends StatelessWidget {
       child: SizedBox(
         height: double.infinity,
         width: double.infinity,
-        child: Lottie.asset('assets/js.json'),
+        child: Lottie.asset('assets/ti.json'),
       ),
     ));
   }
