@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -8,18 +9,28 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color(0xFF204353),
+        foregroundColor: Colors.white,
         title: const Text('Dashboard'),
       ),
       drawer: Drawer(
         child: ListView(
+          padding: EdgeInsets.zero,
           children: [
             const UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    'https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png'),
+                    'https://oflutter.com/wp-content/uploads/2021/02/girl-profile.png'),
               ),
-              accountName: Text('anonimo'),
-              accountEmail: Text('exemplo@.gmail.com'),
+              accountName: Text('Larissa Alcântara'),
+              accountEmail: Text('larissinha@flutter.com'),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                      'https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg'),
+                ),
+              ),
             ),
             ListTile(
               leading: const Icon(Icons.home),
@@ -27,26 +38,33 @@ class HomePage extends StatelessWidget {
               onTap: () {},
             ),
             ListTile(
+              leading: const Icon(Icons.campaign),
+              title: const Text('Notificações'),
+              trailing: ClipOval(
+                child: Container(
+                  color: Colors.red,
+                  width: 20,
+                  height: 20,
+                  child: const Center(
+                    child: Text(
+                      "1",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              onTap: () {},
+            ),
+            ListTile(
               leading: const Icon(Icons.people),
               title: const Text('Clientes'),
               onTap: () {
-                Navigator.pushNamed(context, '/home');
+                Navigator.pushNamed(context, '/entrega');
               },
-            ),
-            ListTile(
-              leading: const Icon(Icons.people),
-              title: const Text('Exercicio'),
-              onTap: () {
-                Navigator.pushNamed(context, '/home');
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.people),
-              title: const Text('sobre'),
-              onTap: () {
-                Navigator.pushNamed(context, '/home');
-              },
-            ),
+            )
           ],
         ),
       ),
