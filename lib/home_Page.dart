@@ -64,6 +64,13 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, '/entrega');
               },
+            ),
+            ListTile(
+              leading: const Icon(Icons.people),
+              title: const Text('Clientes'),
+              onTap: () {
+                Navigator.pushNamed(context, '/entrega');
+              },
             )
           ],
         ),
