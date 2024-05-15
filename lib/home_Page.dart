@@ -11,7 +11,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF204353),
         foregroundColor: Colors.white,
-        title: const Text('Dashboard'),
+        title: const Text(
+          'Art_Fit',
+          style: TextStyle(fontSize: 30),
+        ),
       ),
       drawer: Drawer(
         child: ListView(
@@ -19,16 +22,14 @@ class HomePage extends StatelessWidget {
           children: [
             const UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://oflutter.com/wp-content/uploads/2021/02/girl-profile.png'),
+                backgroundImage: AssetImage('assets/foto2.jpg'),
               ),
-              accountName: Text('Larissa Alcântara'),
-              accountEmail: Text('larissinha@flutter.com'),
+              accountName: Text('nome@exemplo'),
+              accountEmail: Text('email@exemplo'),
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: NetworkImage(
-                      'https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg'),
+                  image: AssetImage('assets/image2.png'),
                 ),
               ),
             ),
@@ -66,16 +67,91 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.people),
-              title: const Text('Clientes'),
+              leading: const Icon(Icons.apartment),
+              title: const Text('Sobre'),
               onTap: () {
                 Navigator.pushNamed(context, '/entrega');
               },
+            ),
+            ListTile(
+              leading: const Icon(Icons.help),
+              title: const Text('Ajuda'),
+              onTap: () {
+                Navigator.pushNamed(context, '/entrega');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.exit_to_app),
+              title: const Text('Sair'),
+              onTap: () {
+                Navigator.pushNamed(context, '/entrega');
+              },
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Center(
+              child: Text(
+                "versao 1.0 ",
+                style: TextStyle(fontSize: 15),
+              ),
             )
           ],
         ),
       ),
-      body: const Center(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: 60,
+          ),
+          Center(
+            child: Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Image.asset('assets/exercicio2.webp'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Image.asset('assets/cono1.png'),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Image.asset('assets/tempo1.png'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
