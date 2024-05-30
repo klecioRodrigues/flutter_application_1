@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/anime_Page.dart';
 import 'package:flutter_application_1/detalhes_Page.dart';
-import 'package:flutter_application_1/entrega_page.dart';
+import 'package:flutter_application_1/exit_page.dart';
+import 'package:flutter_application_1/exit_page.dart';
 import 'package:flutter_application_1/home_Page.dart';
 import 'package:flutter_application_1/login_Page.dart';
 import 'package:flutter_application_1/splash_screen.dart';
@@ -19,8 +20,8 @@ class AppWidget extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/home': (context) => const HomePage(),
         '/anima': (context) => const AnimaPage(),
-        '/entrega': (context) => const entregaPage(),
         '/detalhes': (context) => const DetalhesPage(),
+        '/exit': (context) => const exitPage(),
       },
     );
   }

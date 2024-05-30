@@ -19,13 +19,14 @@ class _HomePageState extends State<LoginPage> {
     final width = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      backgroundColor: Colors.deepOrangeAccent,
       appBar: AppBar(
         title: Row(
           children: [
             Hero(
               tag: 'Art_Fit',
               child: Image.asset(
-                'assets/topo.png.jpg',
+                'assets/image2.png',
                 height: 30,
               ),
             ),
@@ -35,7 +36,7 @@ class _HomePageState extends State<LoginPage> {
             const Text('Bem vindo'),
           ],
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.deepOrangeAccent,
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -48,7 +49,7 @@ class _HomePageState extends State<LoginPage> {
           key: _formKey,
           child: ListView(
             children: [
-              Lottie.asset('assets/cell.json'),
+              Lottie.asset('assets/ti.json'),
               TextFormField(
                 controller: controllerEmail,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
