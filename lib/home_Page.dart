@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.exit_to_app),
               title: const Text('Sair'),
               onTap: () {
-                Navigator.pushNamed(context, '/entrega');
+                Navigator.pushNamed(context, '/exit');
               },
             ),
             const SizedBox(
