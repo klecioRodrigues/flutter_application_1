@@ -105,50 +105,11 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 60,
           ),
-          Center(
-            child: Container(
-              width: 80,
-              height: 80,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
-                ),
-              ),
-              child: Image.asset('assets/exercicio2.webp'),
-            ),
-          ),
           SizedBox(
             height: 10,
           ),
-          Center(
-            child: Container(
-              width: 80,
-              height: 80,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
-                ),
-              ),
-              child: Image.asset('assets/cono1.png'),
-            ),
-          ),
           SizedBox(
             height: 10,
-          ),
-          Center(
-            child: Container(
-              width: 80,
-              height: 80,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
-                ),
-              ),
-              child: Image.asset('assets/tempo1.png'),
-            ),
           ),
         ],
       ),
