@@ -112,18 +112,6 @@ class HomePage extends StatelessWidget {
               style: TextStyle(fontSize: 30),
             ),
           ),
-
-/*
-          SizedBox(
-            height: 60,
-          ),
-          
-          SizedBox(
-            height: 10,
-          ),
-          SizedBox(
-            height: 10,
-          ),*/
         ],
       ),
     );
