@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 
 class exitPage extends StatelessWidget {
   const exitPage({super.key});
