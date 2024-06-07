@@ -42,16 +42,16 @@ class sobre_Page extends StatelessWidget {
             child: Title(
               color: Colors.black,
               child: Text(
-                'Templo de Kamisama - O Caminho do Equilíbrio',
+                'Academia Art_Fit',
                 style: TextStyle(
-                    fontSize: 20, color: Color.fromARGB(255, 0, 0, 0)),
+                    fontSize: 25, color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
           Gap(10),
           Container(
             child: Text(
-                'Sobre Nós , no  templo de kamisama ,  acreditamos que corpo e mente estao intrinsecamente conectados .Nossa academia e um  santuario onde voce pode buscar harmonia , forca e vitalidade'),
+                'Na Art_Fit, acreditamos que o movimento é uma forma de expressão. Nossa academia é um espaço onde a arte do fitness se encontra com a paixão pela saúde.'),
           ),
         ],
       ),
