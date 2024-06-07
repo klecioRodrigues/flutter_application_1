@@ -5,6 +5,7 @@ import 'package:flutter_application_1/detalhes_Page.dart';
 import 'package:flutter_application_1/exit_page.dart';
 import 'package:flutter_application_1/home_Page.dart';
 import 'package:flutter_application_1/login_Page.dart';
+import 'package:flutter_application_1/sobre_Page.dart';
 import 'package:flutter_application_1/splash_screen.dart';
 
 class AppWidget extends StatelessWidget {
@@ -21,6 +22,7 @@ class AppWidget extends StatelessWidget {
         '/home': (context) => const HomePage(),
         '/anima': (context) => const AnimaPage(),
         '/clientes': (context) => const clientePage(),
+        '/sobre': (context) => const sobre_Page(),
         '/detalhes': (context) => const DetalhesPage(),
         '/exit': (context) => const exitPage(),
       },

@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.apartment),
               title: const Text('Sobre'),
               onTap: () {
-                Navigator.pushNamed(context, '/entrega');
+                Navigator.pushNamed(context, '/sobre');
               },
             ),
             ListTile(
