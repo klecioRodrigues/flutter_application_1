@@ -3,7 +3,6 @@ import 'package:flutter_application_1/anime_Page.dart';
 import 'package:flutter_application_1/clientes_Page.dart';
 import 'package:flutter_application_1/detalhes_Page.dart';
 import 'package:flutter_application_1/exit_page.dart';
-import 'package:flutter_application_1/exit_page.dart';
 import 'package:flutter_application_1/home_Page.dart';
 import 'package:flutter_application_1/login_Page.dart';
 import 'package:flutter_application_1/sobre_Page.dart';

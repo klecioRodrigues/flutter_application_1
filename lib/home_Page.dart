@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:gap/gap.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -36,27 +35,6 @@ class HomePage extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.home),
               title: const Text('Home'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: const Icon(Icons.campaign),
-              title: const Text('Notificações'),
-              trailing: ClipOval(
-                child: Container(
-                  color: Colors.red,
-                  width: 20,
-                  height: 20,
-                  child: const Center(
-                    child: Text(
-                      "1",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 12,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
               onTap: () {},
             ),
             ListTile(
@@ -100,17 +78,52 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          Text(
+            'Segunda: Treino de peito e biceps',
+            style: TextStyle(fontSize: 30),
+          ),
+          Gap(20),
+          Container(
+            child: Text(
+              'Terça: Treino de Pernas',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          Gap(20),
+          Container(
+            child: Text(
+              'Quarta: Treino de Costas e Triceps',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          Gap(20),
+          Container(
+            child: Text(
+              'Quinta: Treino de Gluteis e Posterior',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          Gap(20),
+          Container(
+            child: Text(
+              'Sexta: Treino de Peito e Costas ',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+
+/*
           SizedBox(
             height: 60,
           ),
+          
           SizedBox(
             height: 10,
           ),
           SizedBox(
             height: 10,
-          ),
+          ),*/
         ],
       ),
     );
