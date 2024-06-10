@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -55,7 +56,7 @@ class HomePage extends StatelessWidget {
               leading: const Icon(Icons.help),
               title: const Text('Ajuda'),
               onTap: () {
-                Navigator.pushNamed(context, '/entrega');
+                Navigator.pushNamed(context, '/ajuda');
               },
             ),
             ListTile(
@@ -77,66 +78,93 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: ListView(
         children: [
-          Gap(20),
-          Container(
-            height: 43,
-            width: 43,
-            color: Color.fromARGB(255, 85, 209, 218),
-            child: Text(
-              'Segunda: Treino de peito e biceps',
-              style: TextStyle(fontSize: 30),
-            ),
+          ExpansionTile(
+            title: const Text('Segunda-Feira'),
+            children: [
+              ListTile(
+                onTap: () {},
+                title: const Text('treino de peito = seções'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text(''),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2C International Lager'),
+              ),
+            ],
           ),
-          Gap(20),
-          Container(
-            height: 43,
-            width: 43,
-            color: Color.fromARGB(255, 85, 209, 218),
-            child: Text(
-              'Terça: Treino de Pernas',
-              style: TextStyle(fontSize: 30),
-            ),
+          ExpansionTile(
+            title: Text('3 Czech Lager'),
+            children: [
+              ListTile(
+                onTap: () {},
+                title: const Text('2A International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2B International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2C International Lager'),
+              ),
+            ],
           ),
-          Gap(20),
-          Container(
-            height: 43,
-            width: 43,
-            color: Color.fromARGB(255, 85, 209, 218),
-            child: Text(
-              'Quarta: Treino de Costas e Triceps',
-              style: TextStyle(fontSize: 30),
-            ),
+          ExpansionTile(
+            title: Text('4 Pale Malty European Lager'),
+            children: [
+              ListTile(
+                onTap: () {},
+                title: const Text('2A International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2B International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2C International Lager'),
+              ),
+            ],
           ),
-          Gap(20),
-          Container(
-            height: 43,
-            width: 43,
-            color: Color.fromARGB(255, 85, 209, 218),
-            child: Text(
-              'Quinta: Treino de Gluteis e Posterior',
-              style: TextStyle(fontSize: 30),
-            ),
+          ExpansionTile(
+            title: Text('4 Pale Malty European Lager'),
+            children: [
+              ListTile(
+                onTap: () {},
+                title: const Text('2A International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2B International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2C International Lager'),
+              ),
+            ],
           ),
-          Gap(20),
-          Container(
-            height: 43,
-            width: 43,
-            color: Color.fromARGB(255, 85, 209, 218),
-            child: Text(
-              'Sexta: Treino de Peito e Costas ',
-              style: TextStyle(fontSize: 30),
-            ),
-          ),
-          Gap(50),
-          Container(
-            child: Image.asset(
-              'assets/topo.png.jpg',
-              height: 200,
-            ),
-          ),
+          ExpansionTile(
+            title: Text('4 Pale Malty European Lager'),
+            children: [
+              ListTile(
+                onTap: () {},
+                title: const Text('2A International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2B International Lager'),
+              ),
+              ListTile(
+                onTap: () {},
+                title: const Text('2C International Lager'),
+              ),
+            ],
+          )
         ],
       ),
     );

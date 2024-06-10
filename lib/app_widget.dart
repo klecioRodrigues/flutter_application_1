@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/anime_Page.dart';
 import 'package:flutter_application_1/clientes_Page.dart';
-import 'package:flutter_application_1/detalhes_Page.dart';
+import 'package:flutter_application_1/ajuda_Page.dart';
 import 'package:flutter_application_1/exit_page.dart';
 import 'package:flutter_application_1/home_Page.dart';
 import 'package:flutter_application_1/login_Page.dart';
@@ -23,7 +23,7 @@ class AppWidget extends StatelessWidget {
         '/anima': (context) => const AnimaPage(),
         '/clientes': (context) => const clientePage(),
         '/sobre': (context) => const sobre_Page(),
-        '/detalhes': (context) => const DetalhesPage(),
+        '/ajuda': (context) => const ajudaPage(),
         '/exit': (context) => const exitPage(),
       },
     );
