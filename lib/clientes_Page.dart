@@ -32,95 +32,126 @@ class clientePage extends StatelessWidget {
         backgroundColor: Colors.green,
         foregroundColor: Colors.white,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Stack(
         children: [
-          Gap(10),
-          Container(
-            height: 30,
-            width: 120,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'nome: Jose ',
-              style: TextStyle(fontSize: 20),
-            ),
+          Image.asset(
+            'assets/imagem3.jpg',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
           ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 180,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'sobrenome: Silva',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 300,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'data de nascimento :15-01-1985',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 250,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'Nº do CPF:724.203.074-96',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 120,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'nome: Joao ',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 230,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'sobrenome: Rodrigues',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 300,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'Data de nascimento:05-04-1979',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(10),
-          Container(
-            height: 30,
-            width: 270,
-            color: Color.fromARGB(255, 187, 250, 175),
-            child: Text(
-              'Nº do CPF:751.985.594-58',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-          Gap(50),
-          Container(
-            child: Image.asset(
-              'assets/topo.png.jpg',
-              height: 200,
-            ),
+          ListView(
+            children: [
+              ExpansionTile(
+                title: const Text(
+                  'Segunda-Feira',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de peito = 10  seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text(' Treino de força',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Cardiovascular',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('terça-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Atividade recreativa ou treino leve',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida de 3 min na exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('perna = 10 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('quarta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text(
+                      'Atividade recreativa ou treino leve',
+                    ),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Quinta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Malhar Agachamento',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('perna = 15 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida na exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Sexta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de força ',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de perna = 20 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida na Exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Sabado',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Atividade recreativa ou treino leve ',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              )
+            ],
           ),
         ],
       ),
