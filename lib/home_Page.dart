@@ -78,93 +78,127 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: ListView(
+      body: Stack(
         children: [
-          ExpansionTile(
-            title: const Text('Segunda-Feira'),
+          Image.asset(
+            'assets/imagem3.jpg',
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: double.infinity,
+          ),
+          ListView(
             children: [
-              ListTile(
-                onTap: () {},
-                title: const Text('treino de peito = seções'),
+              ExpansionTile(
+                title: const Text(
+                  'Segunda-Feira',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de peito = 10  seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text(' Treino de força',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Cardiovascular',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
               ),
-              ListTile(
-                onTap: () {},
-                title: const Text(''),
+              ExpansionTile(
+                title: Text('terça-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Atividade recreativa ou treino leve',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida de 3 min na exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('perna = 10 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
               ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2C International Lager'),
+              ExpansionTile(
+                title: Text('quarta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text(
+                      'Atividade recreativa ou treino leve',
+                    ),
+                  ),
+                ],
               ),
+              ExpansionTile(
+                title: Text('Quinta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Malhar Agachamento',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('perna = 15 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida na exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Sexta-feira',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de força ',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('treino de perna = 20 seções',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Corrida na Exteira',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              ),
+              ExpansionTile(
+                title: Text('Sabado',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    onTap: () {},
+                    title: const Text('Atividade recreativa ou treino leve ',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ],
+              )
             ],
           ),
-          ExpansionTile(
-            title: Text('3 Czech Lager'),
-            children: [
-              ListTile(
-                onTap: () {},
-                title: const Text('2A International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2B International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2C International Lager'),
-              ),
-            ],
-          ),
-          ExpansionTile(
-            title: Text('4 Pale Malty European Lager'),
-            children: [
-              ListTile(
-                onTap: () {},
-                title: const Text('2A International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2B International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2C International Lager'),
-              ),
-            ],
-          ),
-          ExpansionTile(
-            title: Text('4 Pale Malty European Lager'),
-            children: [
-              ListTile(
-                onTap: () {},
-                title: const Text('2A International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2B International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2C International Lager'),
-              ),
-            ],
-          ),
-          ExpansionTile(
-            title: Text('4 Pale Malty European Lager'),
-            children: [
-              ListTile(
-                onTap: () {},
-                title: const Text('2A International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2B International Lager'),
-              ),
-              ListTile(
-                onTap: () {},
-                title: const Text('2C International Lager'),
-              ),
-            ],
-          )
         ],
       ),
     );
